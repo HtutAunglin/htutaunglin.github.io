@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title> Login Form </title>
+    </head>
+    <body>
+
+        <h1> Login Form </h1>
+        <form action="check.php" method="get">
+           <input type="text" name="name" placeholder="Full name" min length="10" maxlength="50"> <br>
+           <input type="email" name="user_email" placeholder="User email"> <br>
+           <input type="password" name="user_password" placeholder="Enter password" min length="8" maxlength="38"> <br>
+           <input type="submit">
+        </form>
+        <h2> Registration </h2>
+        <form action="register.php" method="get">
+            <input type="hidden" name="user_id" value="45">
+            <textarea name="address" placeholder="Enter Address" cols="38" rows="10"></textarea> <br>
+            <input type="radio" name="gender" value="male" id="male"><label for="male">Male</label>
+            <input type="radio" name="gender" value="female" id="female"><label for="female">Female</label> <br>
+            Interest: <br>
+            <input type="checkbox" name="php" id="php" value="php" checked=checked><label for="php">PHP</label>
+            <input type="checkbox" name="js" id="js" value="js"><label for="js">JS</label>
+            <input type="checkbox" name="css" id="css" value="css"><label for="css">CSS</label>
+            <input type="submit" value="Register">
+        </form>
+    </body>
+</html>
