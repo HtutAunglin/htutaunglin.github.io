@@ -1,0 +1,360 @@
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    color: red
+}
+small{
+    /*color: red; text*/
+    /*color: #7d8a78; Hex code*/
+    /*color: #f00; Short Hex code*/
+    color: rgb(147, 255, 47);
+    color: #ff0000;
+    color: rgba(0, 132, 255, 0.76);
+    word-spacing: 20px;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+/*universal selector*/
+p{ 
+    Margin: 0px;
+    padding: 0px;
+    color: red;
+}
+/*tag selector / Element selector*/
+/*p{
+    font-size: 20px;
+    color: black;
+}*/
+/*Attribute selector*/
+a[target="_blank"]{
+    color: black;
+    text-decoration: none;
+}
+/*id selector*/
+#idselector{
+    color: brown;
+    text-indent: 60px;
+}
+/*class selector*/
+.Classselector{
+    color: lawngreen;
+    font-size: 30px;
+    word-spacing: 20px;
+}
+/*decendent selector*/
+.desc a{
+    color: red;
+    text-decoration: none;
+}
+/*child selector*/
+.child > a{
+    color: blue;
+}
+/*pseudo selector*/
+a:link{
+    color:blue
+}
+
+a:hover{
+    color: red
+}
+
+a:active{
+    color: green
+}
+
+a:visited{
+    color: brown
+}
+
+/*target selector*/
+:target{
+    color: white;
+    border: 1px solid green;
+}
+
+/*Register form*/
+form{
+    width: 80%;
+    margin: auto;
+}
+
+input[type="text"], input[type="number"]{
+    width: 80%;
+    border: 2px solid #ccc;
+    outline: none;
+    background-color: white;
+    height: 40px;
+}
+
+input[type="text"]:focus,input[type="number"]:focus{
+    border: 3px solid #555;
+    /*background-color: red;*/
+}
+
+div#dob_select{
+    width: 90%;
+    background-color: #EEE;
+    border-radius: 4px;
+    outline: none;
+    padding: 7px;
+}
+div#dov_select select{
+    width: 20px;
+    padding: 5px;
+}
+
+input[type="radio"]:checked+label{
+    color: red;
+    font-weight: bold;
+}
+
+textarea#address{
+    width: 100%;
+    height: 100px;
+    border: 2px solid rgb(245, 21, 21);
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="checkbox"]:checked+label{
+    color: #f00;
+    font-style: initial;
+}
+
+input[type="checkbox"]:enabled+label{
+    color: yellow;
+    font-style: normal;
+}
+
+#rule_fieldset  legend{
+    background-color: red;
+    color: white;
+    margin: 20px 0px;
+}
+
+p{
+    text-indent: 30px;
+}
+
+ul li{
+    line-height: 30px;
+    width: 80%;
+    /*margin-left: 10px;*/
+}
+
+li:first-child{
+    background-color: yellow;
+}
+li:last-child{
+    background-color: greenyellow;
+}
+
+li:nth-child(4){
+    background-color: blue;
+}
+
+p:empty{
+    width: 100%;
+    height: 20px;
+    background-color: purple;
+}
+
+.Thankyou{
+    text-align: center;
+}
+
+.borderone{
+    border: 10px double black;
+}
+
+.bordertwo{
+    border-bottom: 2px dashed red;
+}
+
+.borderthree{
+    border:2px dotted yellow;
+    border-radius: 10px;
+}
+
+.borderfour{
+    border-left: 6px solid greenyellow;
+    background-color: black;
+}
+
+.solid{
+    border-style: groove;
+}
+
+.mix{
+    border-style: groove dotted solid dashed;
+          /*top   right bottom left*/
+}
+
+/*margin*/
+p.marginone{
+    border: 5px solid black;
+    margin: 15px;
+    /*All four*/
+}
+
+p.margintwo{
+    border: 5px solid black;
+    margin: 15px 30px;
+    /*top/buttom    &   left/right*/
+}
+
+p.marginthree{
+    border: 5px solid black;
+    margin: 10px 5px 15px;
+      /*top  right/left  button*/
+}
+
+p.marginfour{
+    border: 5px solid black ;
+    margin: 10px 15px 5px 20px;
+        /*top right bottom left*/
+    /*margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    margin-left: 5px;*/
+}
+
+/*padding*/
+p.paddingone{
+    border: 5px solid black;
+    padding: 15px;
+    /*All four*/
+}
+
+p.paddingtwo{
+    border: 5px solid black;
+    padding: 10px 30px;
+}
+
+p.paddingthree{
+    border: 5px solid black;
+    padding: 10px 5px 15px;
+}
+
+p.paddingfour{
+    border: 5px solid black;
+    padding: 10px 15px 20px 5pxs;
+}
+
+/*Layout*/
+a.google,a.facebook{
+    border: 3px solid black;
+}
+
+p.block{
+    border: 3px solid black;
+}
+
+a.inline_block{
+    border: 3px solid black;
+    display: inline-block;
+    width: 500px;
+}
+
+/*float layout*/
+div.float_left img{
+    width: 40%;
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+div.float_right img{
+    width: 40%;
+    float: right;
+}
+
+/*Grid*/
+.gridone,.gridtwo,.gridthree,.gridfour,.gridfive,.gridsix{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.gridone div,.gridtwo div,.gridthree div,.gridfour div,.gridfive div,.gridsix div{
+    border: 2px solid white;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+.gridtwo{
+    grid-column-gap: 30px;
+    /*column spacing*/
+}
+
+.gridthree{
+    grid-row-gap: 30px;
+    /*row spacing*/
+}
+
+.gridfour{
+    grid-gap: 40px;
+    /*row and column*/
+}
+.gridfive .one{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.gridsix .two{
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.relative_parent{
+    width: 1000px;
+    height: 500px;
+    border: 3px solid black;
+}
+
+.relative{
+    position: relative;
+    top: 50px;
+    left: 50px;
+    width: 300px;
+    height: 100px;
+    border: 3px solid black;
+}
+
+.absolute_parent{
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    border: 3px solid black;
+}
+
+.absolute{
+    position: absolute;
+    border: 2px solid black;
+    top: 50px;
+    left: 50px;
+    width: 400px;
+    height: 100px;
+}
+
+.fixed{
+    position: fixed;
+    top: 30px;
+    left: 1000px;
+}
+/*font*/
+/*onlinefont*/
+.onlinefont{
+    font-family: 'Dancing Script', cursive;
+}
+/*offlinefont*/
+@font-face{
+    src:url(../Tourney.zip/)
+    font-family: tour;
+}
+.offlinefont{
+    font-family: tour;
+}
+
